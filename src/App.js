@@ -3,7 +3,7 @@ import './App.css';
 import React from 'react';
 import { Provider, connect } from 'react-redux'
 import { createStore, combineReducers, applyMiddleware } from 'redux'
-import thunk from redux-thunk 
+// import thunk from redux-thunk 
 
 
 //redux stuff
