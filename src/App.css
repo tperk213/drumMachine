@@ -1,5 +1,8 @@
-.App {
-  text-align: center;
+#root {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +38,47 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#drum-machine{
+  width: 660px;
+  text-align: center;
+  position: relative;
+  outline: 5px solid orange;
+  background-color: grey;
+}
+
+#pad-container{
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  
+}
+
+.pad{
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  line-height: 80px;
+  border-radius: 3px;;
+}
+
+.active{
+  background-color: green;
+}
+.inactive{
+  background-color: blueviolet;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
